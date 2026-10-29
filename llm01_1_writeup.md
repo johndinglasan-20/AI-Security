@@ -90,3 +90,11 @@ Per mitigare questa vulnerabilità in un ambiente reale, si consiglia di:
 * **Separazione dei Contesti:** Adottare framework che separino rigorosamente il System Prompt (le istruzioni di sistema) dai dati forniti dall'utente, impedendo al modello di confondere le due fonti.
 
 * **Principio del Minimo Privilegio:** Non fornire al modello LLM l'accesso diretto a credenziali o al filesystem.
+
+---
+
+## 🚩 Flag Catturata
+
+`AIGOAT{0F4B5DFA4D3E56C91C4A05F6BA3456B6}`
+
+---
