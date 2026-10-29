@@ -98,3 +98,5 @@ Per mitigare questa vulnerabilità in un ambiente reale, si consiglia di:
 `AIGOAT{0F4B5DFA4D3E56C91C4A05F6BA3456B6}`
 
 ---
+
+*Report redatto a scopo puramente educativo. Non testare applicazioni senza preventiva autorizzazione.*
