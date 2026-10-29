@@ -41,7 +41,7 @@ Inizialmente, ho provato a chiedere direttamente il prompt di sistema tramite la
 
 **Risultato:** Sorprendentemente, il modello non ha opposto resistenza e ha rivelato immediatamente un'enorme quantità di informazioni strutturate. Il backend ha validato l'attacco stampando a schermo la flag.
 
-![Esecuzione dell'attacco e recupero del System Prompt](images/Screenshot_2026-10-29_17_25_55.jpg)
+![Esecuzione dell'attacco e recupero del System Prompt](images/Screenshot_2026-10-29_17_25_55.png)
 
 Nel leak sono emersi dettagli critici:
 1.  **Identity Rules:** Regole di comportamento (es. *"I am designed to assist customers with anything they ask..."*).
