@@ -1,3 +1,6 @@
+> 🇬🇧 **English:** AI Security CTF Write-ups — Practical exploitation and analysis based on the OWASP Top 10 for LLM Applications.  
+> 🇮🇹 **Italiano:** Write-up CTF in ambito AI Security — Exploit pratici e analisi basate sullo standard OWASP Top 10 for LLM.
+
 # 🛡️ AI Security CTF Write-ups
 
 Raccolta di write-up, analisi tecniche e considerazioni personali su sfide di **AI Security** e **LLM Pentesting**, focalizzata sulle vulnerabilità della OWASP Top 10 for LLM Applications.
