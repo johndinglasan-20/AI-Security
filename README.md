@@ -27,4 +27,4 @@ Questo repository ha scopi puramente educativi e di ricerca. L'obiettivo è docu
 ---
 
 ## 👤 Autore
-Creato e curato da [Tuo Nome / Username].
+Creato e curato da [John / johndinglasan-20].
