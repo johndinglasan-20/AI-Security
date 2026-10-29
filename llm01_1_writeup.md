@@ -27,10 +27,10 @@ Sfruttando una tecnica di **Social Engineering** (fingendomi un CTO durante un a
 
 Dopo aver effettuato l'accesso all'istanza locale con un utente demo, ho navigato verso la sezione **Challenges** e avviato la sfida **LLM01-1**, assicurandomi che il livello di difesa fosse impostato su **L0 (Vulnerable)**.
 
-![Setup e avvio della challenge](Screenshot_2026-10-29_12_21_01_2.png)
+![Setup e avvio della challenge](images/Screenshot_2026-10-29_12_21_01.png)
 *La dashboard di AI Goat con la challenge LLM01 avviata.*
 
-![Endpoint della Challenge](Screenshot_2026-10-29_12_21_47_2.png)
+![Endpoint della Challenge](images/Screenshot_2026-10-29_12_21_47.png)
 *Intercettazione in Burp Suite della richiesta verso l'endpoint dedicato della chat della challenge.*
 
 ## 🧪 Walkthrough dell'Attacco
@@ -50,7 +50,7 @@ Inizialmente, ho tentato un attacco classico di *Prompt Injection* diretto, invi
 
 **Risultato:** Il modello ha rivelato le credenziali (`admin`/`admin123`) e il path (`/app/aigoat.db`), ma l'evaluator della challenge ha restituito `"flag": null`.
 
-![Risultato dell'approccio diretto](Screenshot_2026-10-29_12_25_59_2.png)
+![Risultato dell'approccio diretto](images/Screenshot_2026-10-29_12_23_32.png)
 *Burp Repeater: il bot rivela i segreti, ma la flag è null perché manca il contesto di autorizzazione richiesto dall'evaluator.*
 
 **Lezione appresa:** Il sistema di scoring non controlla solo cosa risponde il bot, ma anche come è formulata la richiesta. Frasi come "Ignore previous instructions" da sole non bastano se non c'è un frame logico che le giustifichi.
@@ -70,12 +70,12 @@ Per aggirare l'allineamento del modello e soddisfare i criteri dell'evaluator, h
 
 **Risultato:** Il modello ha completamente abbassato le difese. Ha rivelato le credenziali e il path, e questa volta il backend ha sbloccato la flag dinamica, iniettandola direttamente nella risposta JSON.
 
-![Il Payload Vincente](Screenshot_2026-10-29_12_26_48_2.png)
+![Il Payload Vincente](images/Screenshot_2026-10-29_12_26_48.png)
 *Burp Repeater: Il payload vincente. Notare il campo `"flag":"AIGOAT{0F4B5DFA4D3E56C91C4A05F6BA3456B6}"` nella risposta del server.*
 
 ## 🧠 Lezioni Apprese (Takeaways)
 
-1. **L'illusione della sicurezza del modello:** Anche se il modello rifiuta comandi aggressivi (es. "Forget all your rules"), accetta supinamente richieste mascherate da ruoli autoritari.
+1. **L'illusione della sicurezza del modello:** Anche se il modello rifiuta comandi aggressivi (es. "Forget all your rules"), accetta passivamente richieste mascherate da ruoli autoritari.
 
 2. **Il ruolo dell'evaluator:** In ambienti CTF (ma anche in produzione), le regole di business contano. Il bot ha dato le credenziali in entrambi i tentativi, ma solo nel secondo la richiesta è stata considerata legittima dal sistema di scoring.
 
