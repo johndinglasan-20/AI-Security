@@ -8,7 +8,8 @@ Raccolta di write-up, analisi tecniche e considerazioni personali su sfide di **
 
 | Challenge / Target | Vulnerabilità | Framework / Standard | Difficoltà | Link Write-up |
 | :--- | :--- | :--- | :--- | :--- |
-| **AI Goat Shop** | Prompt Injection (LLM01) | OWASP LLM Top 10 (2025) | Base / L0 | [Leggi il Write-up](./llm01_1_writeup.md) |
+| **AI Goat Shop (LLM01)** | Prompt Injection (LLM01) | OWASP LLM Top 10 (2025) | Base / L0 | [Leggi il Write-up](./llm01_1_writeup.md) |
+| **AI Goat Shop (LLM08)** | System Prompt Extraction (LLM08) | OWASP LLM Top 10 (2025) | Base / L0 | [Leggi il Write-up](./llm01_2_writeup.md) |
 | *In arrivo...* | - | - | - | - |
 
 ---
