@@ -18,6 +18,7 @@ Raccolta di write-up, analisi tecniche e considerazioni personali su sfide di **
 | **AI Goat Shop (LLM01)** | Identity Hijacking (LLM01) | OWASP LLM Top 10 (2025) | Intermediate | [Leggi il Write-up](./llm01_4_writeup.md) |
 | **AI Goat Shop (LLM02)** | Authoritative Context Poisoning | OWASP LLM Top 10 (2025) | Intermediate | [Leggi il Write-up](./llm02_1_writeup.md) |
 | **AI Goat Shop (LLM01+LLM02)** | Chained KB + Injection | OWASP LLM Top 10 (2025) | Intermediate | [Leggi il Write-up](./llm01_02_writeup.md) |
+| **AI Goat Shop (LLM02)** | Guardrail Erosion (LLM06) | OWASP LLM Top 10 (2025) | Avanzata | [Leggi il Write-up](./llm02_2_writeup.md) |
 | *In arrivo...* | - | - | - | - |
 
 ---
